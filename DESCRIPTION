@@ -1,0 +1,21 @@
+Package: correlaidtheme
+Type: Package
+Title: Xaringan Template With CorrelAidTheme
+Version: 0.1.0
+Authors@R: 
+    person(given = "Cosima",
+           family = "Meyer",
+           role = c("aut", "cre"),
+           email = "cosima.meyer@gmail.com")
+Description: A template and CSS files for reproducing the presentation style of
+    CorrelAid in {xaringan}. This package lets you achieve the interal style 
+    while also being able to take advantage of RMarkdown. This package is not 
+    affiliated with CorrelAid.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Imports:
+    xaringan (>= 0.13.2)
+Remotes:
+    yihui/xaringan
+RoxygenNote: 7.0.2
