@@ -112,14 +112,14 @@ a, a > code {
 }
 .title-slide, .title-slide h1, .title-slide h2, .title-slide h3 {
   color: var(--title-slide-text-color);
-  text-align: right !important;
+  text-align: center !important;
 }
 .title-slide {
   background-image: url('img/logo.png');
   left: 2;
   bottom: 0;
-  background-position: center !important;
-  background-size: 30%;
+  background-position: center top !important;
+  background-size: 40%;
 }
 .title-slide .remark-slide-number {
   display: none;
