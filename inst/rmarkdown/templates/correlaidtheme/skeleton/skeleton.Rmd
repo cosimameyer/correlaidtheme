@@ -151,11 +151,13 @@ class: inverse, center, middle
 ---
 class: inverse, middle, center
 
-<img src="img/twitter.png" width=500 height=150>
+<img src="img/logo.png" width=200 height=200>
+
+`r fontawesome::fa(name = "globe", fill = "white")` [correlaid.org](https://correlaid.org) 
 
 `r fontawesome::fa(name = "twitter", fill = "white")` [@CorrelAid](https://twitter.com/correlaid?lang=en)
 
-`r fontawesome::fa(name = "globe", fill = "white")` [correlaid.org](https://correlaid.org) 
+`r fontawesome::fa(name = "linkedin", fill = "white")` [correlaid](https://www.linkedin.com/company/correlaid/)
 
 
 

@@ -119,6 +119,7 @@ a, a > code {
   left: 2;
   bottom: 0;
   background-position: center !important;
+  background-size: 30%;
 }
 .title-slide .remark-slide-number {
   display: none;
