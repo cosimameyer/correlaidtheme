@@ -114,12 +114,16 @@ a, a > code {
   color: var(--title-slide-text-color);
   text-align: center !important;
 }
+.title-slide h1 {
+  margin-top: calc(40% + 0.8em);
+}
 .title-slide {
   background-image: url('img/logo.png');
   left: 2;
   bottom: 0;
   background-position: center top !important;
   background-size: 40%;
+  vertical-align: top !important;
 }
 .title-slide .remark-slide-number {
   display: none;

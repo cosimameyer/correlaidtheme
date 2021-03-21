@@ -1,5 +1,5 @@
 ---
-title: "</br></br></br>Title"
+title: "Title"
 subtitle: "Subtitle"
 author: 
   - ""
