@@ -105,7 +105,6 @@ a, a > code {
 .inverse {
   background-color: var(--inverse-background-color);
   color: var(--inverse-text-color);
-  
 }
 .inverse h1, .inverse h2, .inverse h3 {
   color: var(--inverse-header-color);
@@ -118,11 +117,11 @@ a, a > code {
   margin-top: calc(40% + 0.8em);
 }
 .title-slide {
-  background-image: url('img/logo.png');
+  background-image: url('img/CorrelAid_Dach-zentriert_white-negativ.png');
   left: 2;
   bottom: 0;
-  background-position: center top !important;
-  background-size: 40%;
+  background-position: 50% 10%;
+  background-size: 35%;
   vertical-align: top !important;
 }
 .title-slide .remark-slide-number {
@@ -285,4 +284,22 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 .remark-slide-number .progress-bar {
   height: 100%;
   background-color: #2b64a8;
+}
+
+.bg_img {
+  position: absolute;
+  z-index: 1;
+}
+
+.bg_img::before {   
+     content: "";
+      background-image: url('img/section1.png');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.35;
+      z-index: -1;
 }

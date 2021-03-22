@@ -17,6 +17,7 @@ output:
       - "correlaid-themer.css"
       - "ninjutsu"
       - "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+      - "hygge"
     nature:
       highlightStyle: github
       highlightLines: true
@@ -25,13 +26,17 @@ output:
         <div class="progress-bar-container">
           <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
           </div>
-        </div>`
+        </div>
 ---
 ```{r load_packages, message=FALSE, warning=FALSE, include=FALSE} 
 # devtools::install_github("rstudio/fontawesome")
+# remotes::install_github("gadenbuie/xaringanExtra")
+# remotes::install_github("gadenbuie/countdown")
 
 library(fontawesome)
 library(xaringanthemer)
+library(countdown)
+xaringanExtra::use_panelset()
 
 options(htmltools.dir.version = FALSE)
 
@@ -48,6 +53,22 @@ class: inverse, center, middle
 # Section slide 
 
 ---
+class: inverse, middle, center
+background-image: url("img/blue.png")
+background-position: 0% 100%;
+background-size: cover
+
+# Section slide with color gradient (blue)
+
+---
+class: inverse, middle, center
+background-image: url("img/red.png")
+background-position: 0% 100%;
+background-size: cover
+
+# Section slide with color gradient (red)
+
+---
 # Only text
 
 - Some text can be added here
@@ -58,6 +79,8 @@ class: inverse, center, middle
   * Or indent bullets
 
 > Write a block quote
+
+Add emojis with different sizes <span style="font-size:3em">👩🏼‍💻</span><span style="font-size:2em">👩🏼‍💻</span><span style="font-size:1em">👩🏼‍💻</span><span style="font-size:0.5em">👩🏼‍💻</span>
 
 ---
 # More styles
@@ -77,6 +100,21 @@ class: hide-logo
 <br><br><br><br>
 ![](img/organigram.png)
 
+---
+class: bg_img, hide-logo, progress-bar-hide
+
+# Image as background
+
+But you can add some text as well and it will be clearly visible.
+&nbsp;
+---
+class: bg_img, hide-logo, progress-bar-hide
+
+.full-width[.content-box-grey[
+# Image with a text box
+
+And you can add some text here as well and it will be clearly visible.
+]]
 ---
 # Two columns (image and text)
 
@@ -143,6 +181,170 @@ Projekt würde ohne uns nicht realisiert werden
 ![](img/work.png)
 ]
 
+
+---
+# Upgrade your images (1)
+
+These features are presented [**here**](https://github.com/yihui/xaringan/blob/master/inst/examples/ghoul.Rmd)
+
+
+.pull-left[
+Nothing changed:
+
+```{r echo=FALSE, out.width="40%"}
+knitr::include_graphics("img/work.png")
+```
+
+`.polaroid`
+
+.polaroid[
+```{r echo=FALSE, out.width="40%"}
+knitr::include_graphics("img/work.png")
+```
+]
+]
+.pull-right[
+
+`.rotate-right`:
+
+.rotate-right[
+```{r echo=FALSE, out.width="40%"}
+knitr::include_graphics("img/work.png")
+```
+]
+
+`.blur`
+
+.blur[
+```{r echo=FALSE, out.width="40%"}
+knitr::include_graphics("img/work.png")
+```
+] 
+]
+
+---
+# Upgrade your images (2)
+
+.pull-left[
+`.opacity`
+
+.opacity[
+```{r echo=FALSE, out.width="40%"}
+knitr::include_graphics("img/work.png")
+```
+]
+
+Combine `.blur` and `.opacity`
+
+.blur[.opacity[
+```{r echo=FALSE, out.width="40%"}
+knitr::include_graphics("img/work.png")
+```
+]]
+]
+.pull-right[
+
+`.grayscale`:
+
+.rotate-left[
+.grayscale[
+```{r echo=FALSE, out.width="40%"}
+knitr::include_graphics("img/work.png")
+```
+]]
+
+`.shadow`
+
+.shadow[
+```{r echo=FALSE, out.width="40%"}
+knitr::include_graphics("img/work.png")
+```
+] 
+]
+
+---
+# For workshops (1)
+
+.panelset[
+  .panel[.panel-name[Code]
+```{r, message = FALSE, eval=FALSE}
+# Load packages
+library(dplyr)
+library(ggplot2)
+
+# Load data
+data("mtcars")
+
+# Generate a plot
+mtcars %>%
+*  ggplot() +
+*  geom_smooth(aes(x = hp, y = mpg))
+```
+  ]
+  .panel[.panel-name[Plot]
+  .center[
+```{r, message = FALSE, eval=TRUE, echo=FALSE}
+library(dplyr)
+library(ggplot2)
+# Add some code here
+data("mtcars")
+
+mtcars %>%
+  ggplot() +
+  geom_smooth(aes(x = hp, 
+                  y = mpg))
+```
+  ]]
+]
+
+---
+# For workshops (2)
+
+
+.pull-left[
+**Code**
+```{r, eval=FALSE, warning=FALSE, message=FALSE}
+# Load packages
+library(dplyr)
+library(ggplot2)
+
+# Load data
+data("mtcars")
+
+# Generate a plot
+mtcars %>%
+  ggplot() +
+  geom_smooth(aes(x = hp, 
+                  y = mpg))
+```
+]
+
+.pull-right[
+**Output**
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+# Load packages
+library(dplyr)
+library(ggplot2)
+
+# Load data
+data("mtcars")
+
+# Generate a plot
+mtcars %>%
+  ggplot() +
+  geom_smooth(aes(x = hp, y = mpg))
+```
+]
+
+---
+class: middle, center, hide-logo
+
+<span style="font-size:3em">**Practice session** 💻</span>
+```{r, echo=FALSE}
+countdown::countdown(minutes = 5, seconds = 0)
+```
+
+
 ---
 class: inverse, center, middle
 
@@ -151,7 +353,7 @@ class: inverse, center, middle
 ---
 class: inverse, middle, center
 
-<img src="img/logo.png" width=200 height=200>
+<img src="img/CorrelAid_Dach-zentriert_white-negativ.png" width=200 height=150>
 
 `r fontawesome::fa(name = "globe", fill = "white")` [correlaid.org](https://correlaid.org) 
 
