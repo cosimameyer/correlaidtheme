@@ -7,7 +7,7 @@ devtools::install_github("cosimameyer/correlaidtheme")
 library(correlaidtheme)
 ```
 
-Here's a quick preview:
+Here is a quick preview:
 
 ![](https://cosimameyer.rbind.io/media/correlaidtheme.gif)
 
