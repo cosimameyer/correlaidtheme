@@ -293,7 +293,7 @@ table.dataTable.hover tbody tr:hover, table.dataTable.display tbody tr:hover {
 
 .bg_img::before {   
      content: "";
-      background-image: url('img/section1.png');
+      background-image: url('img/section1.JPG');
       background-size: cover;
       position: absolute;
       top: 0px;

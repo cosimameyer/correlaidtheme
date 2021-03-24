@@ -9,7 +9,7 @@ library(correlaidtheme)
 
 Here's a quick preview:
 
-![](https://cosimameyer.rbind.io/media/correlaidtheme.gif)
+![](https://cosimameyer.rbind.io/media/correlaidtheme_demo.gif)
 
 This package is not affiliated with CorrelAid.
 
