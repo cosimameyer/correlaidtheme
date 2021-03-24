@@ -8,9 +8,12 @@ devtools::install_github("cosimameyer/correlaidtheme")
 library(correlaidtheme)
 ```
 
+
 Here is a quick preview:
 
 ![](https://cosimameyer.rbind.io/media/correlaid_demo.gif)
+
+And a [**demo**](http://cosimameyer.rbind.io/slides/correltheme/skeleton#1).
 
 This package is not affiliated with CorrelAid.
 
