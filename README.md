@@ -1,6 +1,7 @@
 # CorrelAid Theme for `xaringan` slides
 
-This repository contains a `xaringan` theme in the colors of CorrelAid. You can install the theme with the following code:
+This repository contains a `xaringan` theme in the colors of CorrelAid and meant only for internal usage. 
+You can install the theme with the following code:
 
 ```
 devtools::install_github("cosimameyer/correlaidtheme")
@@ -9,7 +10,7 @@ library(correlaidtheme)
 
 Here is a quick preview:
 
-![](https://cosimameyer.rbind.io/media/correlaidtheme_demo.gif)
+![](https://cosimameyer.rbind.io/media/correlaid_demo.gif)
 
 This package is not affiliated with CorrelAid.
 
